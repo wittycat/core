@@ -1,4 +1,8 @@
 1.反射
+    获取对象字节对象的3中方式
+   		Class class1 = 对象.class;
+		Class<?> class2 = this.getClass();
+		Class.forName("")
 2.动态代理
   jdk:接口InvocationHandler  实现invoke
   cglib：接口MethodInterceptor 实现intercept   创建Enhancer设置父接口
@@ -7,3 +11,8 @@
      preHandler() - 在实际的handler被执行前被调用
      postHandler() - 在handler被执行后被调用
      afterCompletion() - 当request处理完成后被调用
+4.jdbc
+  Statement的子类   
+  PreparedStatement:Statement的子类 预编译
+  ResultSet:结果集 getGeneratedKeys
+  Statement的generatedKeys()方法返回ResultSet 可以获取主键
