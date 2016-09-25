@@ -6,13 +6,21 @@
 2.动态代理
   jdk:接口InvocationHandler  实现invoke
   cglib：接口MethodInterceptor 实现intercept   创建Enhancer设置父接口
-3.springMvc
-     拦截器：HandlerInterceptor
-     preHandler() - 在实际的handler被执行前被调用
-     postHandler() - 在handler被执行后被调用
-     afterCompletion() - 当request处理完成后被调用
-4.jdbc
+3.jdbc
   Statement的子类   
   PreparedStatement:Statement的子类 预编译
   ResultSet:结果集 getGeneratedKeys
   Statement的generatedKeys()方法返回ResultSet 可以获取主键
+4.多线程
+     开启线程方式：Thread，Callable，Runnable
+     同步工具类主要包括
+	  闭锁（如CountDownLatch），
+	  栅栏（如CyclicBarrier），
+	  信号量（如Semaphore）
+	  阻塞队列（如LinkedBlockingQueue）
+    线程池：
+     ThreadPoolExecutor
+     Executors.newSingleThreadExecutor()
+     Executors.newFixedThreadPool(10)
+  
+  
