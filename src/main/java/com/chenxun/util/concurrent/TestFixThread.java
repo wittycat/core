@@ -10,14 +10,14 @@ public class TestFixThread {
 
 	public static void main(String[] args) {
 		// 创建执行器 线程池
-		ExecutorService pool = Executors.newFixedThreadPool(10);
+		ExecutorService pool = Executors.newFixedThreadPool(1);
 		// 添加任务
-		for (int i = 0; i < 20; i++) {
+		for (int i = 0; i < 200; i++) {
 			Runnable runnable = new Runnable() {
 				@SuppressWarnings("static-access")
 				public void run() {
 					try {
-						Thread.currentThread().sleep(1000);
+						Thread.currentThread().sleep(3000);
 					} catch (InterruptedException e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
