@@ -12,7 +12,7 @@ public class TestFixThread {
 		// 创建执行器 线程池
 		ExecutorService pool = Executors.newFixedThreadPool(1);
 		// 添加任务
-		for (int i = 0; i < 200; i++) {
+		for (int i = 0; i < 3; i++) {
 			Runnable runnable = new Runnable() {
 				@SuppressWarnings("static-access")
 				public void run() {
