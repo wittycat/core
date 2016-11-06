@@ -1,4 +1,4 @@
-package com.chenxun.designpattern.simplefactory;
+package com.chenxun.designpattern.factory.simplefactory;
 
 
 /** 
@@ -13,7 +13,7 @@ package com.chenxun.designpattern.simplefactory;
 public class SimpleFactoryClient {
 	
 	public static void main(String[] args) {
-		new SimpleFactoryServer().createFruit("peach").peculiarity();
-		new SimpleFactoryServer().createFruit("orange").peculiarity();
+		new StudentSimpleFactory().createStudent("Db2").studentFormWhere();
+		new StudentSimpleFactory().createStudent("Mysql").studentFormWhere();
 	}
 }
