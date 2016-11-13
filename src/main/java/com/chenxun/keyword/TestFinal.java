@@ -6,7 +6,7 @@ import org.junit.Test;
  * @author：chenxun
  * 创建时间：2016年6月11日 下午3:39:16 
  * 参考：
- * 说明：
+ * 说明：final只能被赋值一次（也就是只能初始化一次）
  */
 public class TestFinal {
 
