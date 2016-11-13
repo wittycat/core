@@ -20,7 +20,7 @@ public class TvolatileAndAllKindsLock {
 //	static ReadLock lock = new ReentrantReadWriteLock().readLock();//能保障结果为1000000
 //	static WriteLock lock = new ReentrantReadWriteLock().writeLock();//不能保障结果为1000000
 	//尝试获取锁测试
-	static Lock lock = new ReentrantLock();
+	static Lock lock = new ReentrantLock();//重入锁
 	static int count ;//尝试未获取锁计数
 	
 	public static int getA() {
