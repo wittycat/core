@@ -1,13 +1,9 @@
 package com.chenxun.util.concurrent;
-
-
-
-
 /** 
  * @author：chenxun
  * 创建时间：2016年10月8日 下午8:58:33 
  * 参考：
- * 说明： Object类的方法：
+ * 说明： Object类的方法
  *      Wait()是Object类的方法，范围是使该Object实例所处的线程。
  *      Wait方法进入等待状态时会释放同步锁(如例中的lock对象)
  *      notify()将随机唤醒一个在对象上等待的线程，没有一个都没有，则什么都不做。
