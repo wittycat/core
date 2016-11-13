@@ -9,7 +9,7 @@ package com.chenxun.util.concurrent;
  *      notify()将随机唤醒一个在对象上等待的线程，没有一个都没有，则什么都不做。
  *      notifyAll()唤醒的所有线程，将在notify()线程释放了对象监视器以后才执行，并不是notify了以后马上执行。
  *      --------------------------------------------------------------------
- *      Thread类的方法：
+ *      Thread类的方法
  *      Sleep()是Thread类专属的静态方法，针对一个特定的线程。
  *      Sleep方法不会释放同步锁
  *      interrupt()终止线程，前提该线程必须持有锁，如果线程在调用 Object 类的 wait()、wait(long) 
