@@ -22,5 +22,8 @@
      ThreadPoolExecutor
      Executors.newSingleThreadExecutor()
      Executors.newFixedThreadPool(10)
+5.Comparable （方便，实体继承继承，不灵活）和 Comparator（灵活，多维度实现比较） 
+6.Iterable（管理者，产生Iterator 去执行） 和 Iterator （具体操作者）
+
   
   
