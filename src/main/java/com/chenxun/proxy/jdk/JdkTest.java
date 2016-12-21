@@ -1,12 +1,12 @@
-package com.chenxun.lang.reflect.proxy.jdk;
+package com.chenxun.proxy.jdk;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Proxy;
 
 import org.junit.Test;
 
-import com.chenxun.lang.reflect.proxy.Eat;
-import com.chenxun.lang.reflect.proxy.EatImpl;
+import com.chenxun.proxy.Eat;
+import com.chenxun.proxy.EatImpl;
 
 /** 
  * @author：chenxun
@@ -20,7 +20,7 @@ public class JdkTest {
 		ClassLoader loader = getClass().getClassLoader();
 		@SuppressWarnings("rawtypes")
 		Class[] interfaces = {Eat.class};
-		InvocationHandler h = new JdkEatProxy(new EatImpl());
+		InvocationHandler h = new EatInvocationHandler(new EatImpl());
 		Eat newProxyInstance = (Eat) Proxy.newProxyInstance(loader, interfaces, h);
 		newProxyInstance.eat();
 	}

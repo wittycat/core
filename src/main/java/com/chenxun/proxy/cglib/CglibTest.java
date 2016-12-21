@@ -1,8 +1,8 @@
-package com.chenxun.lang.reflect.proxy.cglib;
+package com.chenxun.proxy.cglib;
 
 import org.junit.Test;
 
-import com.chenxun.lang.reflect.proxy.EatImpl;
+import com.chenxun.proxy.EatImpl;
 
 /** 
  * @author：chenxun

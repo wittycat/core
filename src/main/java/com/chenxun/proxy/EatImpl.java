@@ -1,4 +1,4 @@
-package com.chenxun.lang.reflect.proxy;
+package com.chenxun.proxy;
 
 
 /** 

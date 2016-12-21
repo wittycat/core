@@ -1,4 +1,4 @@
-package com.chenxun.util;
+package com.chenxun.other;
 
 import java.util.Arrays;
 

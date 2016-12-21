@@ -11,4 +11,4 @@
  * 有父类方法的调用，顺势织入横切逻辑。JDK动态代理与CGLib动态代理均是实现Spring AOP的基础。(springioc 
  * 通过反射创建对象)
  */
-package com.chenxun.lang.reflect.proxy;
+package com.chenxun.proxy;

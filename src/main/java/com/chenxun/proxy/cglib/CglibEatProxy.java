@@ -1,4 +1,4 @@
-package com.chenxun.lang.reflect.proxy.cglib;
+package com.chenxun.proxy.cglib;
 
 import java.lang.reflect.Method;
 

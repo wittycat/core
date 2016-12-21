@@ -1,9 +1,9 @@
-package com.chenxun.lang.reflect.proxy.jdk;
+package com.chenxun.proxy.jdk;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 
-import com.chenxun.lang.reflect.proxy.Eat;
+import com.chenxun.proxy.Eat;
 
 /** 
  * @author：chenxun
@@ -11,11 +11,11 @@ import com.chenxun.lang.reflect.proxy.Eat;
  * 参考：
  * 说明：
  */
-public class JdkEatProxy implements InvocationHandler {
+public class EatInvocationHandler implements InvocationHandler {
 	
 	private Eat eat;
 
-	public JdkEatProxy(Eat eat) {
+	public EatInvocationHandler(Eat eat) {
 		this.eat = eat;
 	}
 
