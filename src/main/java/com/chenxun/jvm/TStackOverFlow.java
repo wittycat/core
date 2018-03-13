@@ -18,24 +18,28 @@ import java.util.List;
  * 
  */
 public class TStackOverFlow {
+
 	private static int threadNums;
+
 	public static void main(String[] args) throws InterruptedException {
-//		for (;;) {
+		for (;;) {
 //			Thread.sleep(50000);
-//			new Thread(new Runnable() {
-//				@Override
-//				public void run() {
-//					method();
-//				}
-//			}).start();
-//		}
-		String  base = "string";
-        List<String> list = new ArrayList<String>();
-        for (int i=0;i< Integer.MAX_VALUE;i++){
-            String str = base + base;
-            base = str;
-            list.add(str.intern());
+            final Thread thread = new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    method();
+                }
+            });
+            thread.setName(TStackOverFlow.class.getName()+threadNums);
+            thread.start();
         }
+//		String  base = "string";
+//        List<String> list = new ArrayList<String>();
+//        for (int i=0;i< Integer.MAX_VALUE;i++){
+//            String str = base + base;
+//            base = str;
+//            list.add(str.intern());
+//        }
 	}
 
 	private static void method(){
@@ -47,6 +51,7 @@ public class TStackOverFlow {
 			
 		}
 //		byte[] G_1 = new byte[1024*1024*5];
+        
 	}
 
 }

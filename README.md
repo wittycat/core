@@ -23,8 +23,14 @@
 ### 环境
 * JVM虚拟机
 
+### 版本控制
+* <a href="./document/version/git.md">git</a>
 
-----------
 
 ### 设计模式
+
+### 常见业务场景
+* <a href="./document/cache/cache.md">缓存问题</a>
+
+
 

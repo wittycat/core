@@ -20,7 +20,7 @@ public class TGc {
     	 
     	 for (;;) {
 			try {
-				Thread.currentThread().sleep(30000);
+				Thread.currentThread().sleep(3000);
 				System.gc();
 			} catch (InterruptedException e) {
 				e.printStackTrace();
