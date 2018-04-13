@@ -1,4 +1,3 @@
-### 软件的重要的理论(陆续整理更新中...)
 ### 概述：编程，不仅仅是编程
  ![](/document/summary/summary.png "概述")
 
@@ -23,14 +22,19 @@
 ### 环境
 * JVM虚拟机
 
+### 分布式
+* Netty
+* zookeeper
+* redis
+* mysql
+
 ### 版本控制
 * <a href="./document/version/git.md">git</a>
-
 
 ### 设计模式
 
 ### 常见业务场景
-* <a href="./document/cache/cache.md">缓存问题</a>
+* <a href="./document/problem/cache/cache.md">缓存问题</a>
 
 
 
