@@ -26,7 +26,7 @@
 * <a href="./document/distributed/Mysql.md">Mysql</a>
 
 ### 版本控制
-* <a href="./document/version/Git.md">GitGit</a>
+* <a href="./document/version/Git.md">Git</a>
 
 ### 设计模式
 
