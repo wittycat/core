@@ -1,4 +1,5 @@
   Linux命令并不好记，那么命令是哪些的简写呢？这是一个有趣的问题，只要你能想到的基本都能搜到，于是搜索下。[知乎](https://www.zhihu.com/question/49073893?sort=created)
+  
 ####系统
 * top:cpu,内存，负载，僵尸进程查看
 * iostat:cpu输入输入，cpu使用情况
