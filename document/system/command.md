@@ -9,6 +9,10 @@
 #### 网络
 * ssh
 * ssh-add：[应用](https://www.cnblogs.com/edward2013/p/5396254.html)
+* 查看Linux服务器有多少个用户连接ssh的方法：
+  * 查看：who
+  * 如果想要断开某个ssh 用户 可以在命令行输入 ：ps aux |grep sshd 
+  * 得到pid 再用命令关闭那个pid: kill -111
 
 #### 进程
 * ps 

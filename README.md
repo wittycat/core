@@ -39,10 +39,3 @@
 ### 常见业务场景
 * <a href="./document/problem/cache.md">缓存问题</a>
 
-<!-- 
-todo：
-1.org.apache.commons.pool2->手写连接池
-2.jedis 源码 各种命令
-3.各种日志组建
--->
-
