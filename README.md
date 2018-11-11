@@ -1,6 +1,10 @@
 ### 概述：编程，不仅仅是编程
 ![](/document/summary/summary.png "概述")
 
+### 常见业务场景
+* <a href="./document/problem/cache.md">缓存问题</a>
+* <a href="./document/problem/系统负载.md">系统负载</a>
+
 ### 计算机组成
 * <a href="./document/computer/Computer.md">Computer</a>
 
@@ -23,7 +27,7 @@
 * <a href="./document/environment/JVM.md">JVM</a>
 
 ### 语言
-* [Java基础](https://github.com/javachenxun/java/blob/master/README.md)
+* [Java基础](https://github.com/wittycat/java/blob/master/README.md)
 
 ### 分布式组件
 * <a href="./document/distributed/Netty.md">Netty</a>
@@ -36,6 +40,4 @@
 
 ### 设计模式
 
-### 常见业务场景
-* <a href="./document/problem/cache.md">缓存问题</a>
 
