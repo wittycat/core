@@ -41,6 +41,3 @@
 * uniq
 * head
 * tail
-
-         cat zzkfwebadmin_info.log.2018-04-19-13.log |grep zzUser_|grep count= |awk '{print $14}' |cut -f2 -d'=' |sort | uniq -c | sort -n -r -k1 | head -10
-         https://www.cnblogs.com/Berryxiong/p/5914507.html
