@@ -1,5 +1,5 @@
 #### 函数
-#### 存储引擎与锁
+#### 存储引擎（与锁）
  * MyISAM
    * 表锁
  * [InnoDB](https://dev.mysql.com/doc/refman/5.7/en/innodb-locking.html)
