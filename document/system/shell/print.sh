@@ -1,7 +1,7 @@
 #! /bin/bash
-name=chenxun #ÐÕÃû
-age=26 #ÄêÁä
-echo ÎÒ½Ð$name,½ñÄê$ageËê,ÕâÊÇÎÒµÚÒ»¸öshell½Å±¾!
+name=chenxun #å§“å
+age=26 #å¹´é¾„
+echo $name,$age å²
 echo HOME=$HOME
 echo PWD=$PWD
 echo USER=$USER
@@ -9,7 +9,7 @@ echo UID=$UID
 echo SHELL=$SHELL
 echo ---------------------------
 if [ $UID -ne 0 ]; then
- echo ÄãÊÇÆÕÍ¨ÓÃ»§
+ echo ä½ æ˜¯æ™®é€šç”¨æˆ·
 else
- echo ÄãÊÇrootÓÃ»§
-#´´½¨Íê³ÉºóÐÞ¸ÄÈ¨ÏÞ £ºchmod a+x xx.sh
+ echo ä½ æ˜¯rootç”¨æˆ·
+# åˆ›å»ºå®ŒæˆåŽä¿®æ”¹æƒé™ ï¼šchmod a+x xx.sh
