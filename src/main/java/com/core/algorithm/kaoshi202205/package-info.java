@@ -12,26 +12,28 @@ package com.core.algorithm.kaoshi202205;
  *   数组
  *
  *   单链表：
- *     虚头
- *     提前记录当前节点（指针）
+ *      解题思路
+ *          虚头
+ *          提前记录当前节点（指针）
  *   双链表：
- *  
+ *      ArrayDeque
  *   栈
- *    Stack
+ *      Stack
+ *      解题思路：
+ *          2个栈，构建一个队列：一个放，一个取（没有了从另外一个放）
  *   队列
  *   堆
- *    PriorityQueue<Integer> minHeap = new PriorityQueue<Integer>(); //⼩顶堆，默认容量为11
- *    PriorityQueue<Integer> maxHeap = new PriorityQueue<Integer>(11,new Comparator<Integer>(){
+ *      PriorityQueue<Integer> minHeap = new PriorityQueue<Integer>(); //⼩顶堆，默认容量为11
+ *      PriorityQueue<Integer> maxHeap = new PriorityQueue<Integer>(11,new Comparator<Integer>(){
  *            @Override
  *            public int compare(Integer i1,Integer i2){
  *                      return i2-i1;
  *                  }
  *            });//⼤顶堆
- *
  *   哈希
  *   二叉树
  *      类别
- *          满二叉树（最标准，节点最多）
+ *      满二叉树（最标准，节点最多）
  *          完全二叉树（倒数第一层左到右连续，倒数第二层左到右连续，）
  *          线索二叉树
  *      操作
