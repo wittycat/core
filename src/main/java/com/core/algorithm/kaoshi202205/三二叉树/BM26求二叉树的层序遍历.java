@@ -16,7 +16,23 @@ public class BM26求二叉树的层序遍历 {
      * @param root TreeNode类
      * @return int整型ArrayList<ArrayList<>>
      */
-    public ArrayList<ArrayList<Integer>> levelOrder (TreeNode root) {
+
+    public static void main(String[] args) {
+        TreeNode treeNode = new TreeNode(1);
+        treeNode.left=new TreeNode(2);
+        treeNode.right=new TreeNode(3);
+
+        treeNode.left.left=new TreeNode(4);
+        treeNode.left.right=new TreeNode(5);
+
+        treeNode.right.left=new TreeNode(6);
+        treeNode.right.right=new TreeNode(7);
+
+        levelOrder(treeNode);
+
+    }
+
+    public static ArrayList<ArrayList<Integer>> levelOrder (TreeNode root) {
         ArrayList<ArrayList<Integer>> total = new ArrayList();
         if(root==null){
             return total;
