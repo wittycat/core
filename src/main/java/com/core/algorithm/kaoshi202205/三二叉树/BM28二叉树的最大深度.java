@@ -10,12 +10,26 @@ import java.util.Deque;
  * Description:
  */
 public class BM28二叉树的最大深度 {
+
     /**
-     *
+     * 方法一
+     * @param root
+     * @return
+     */
+    public int maxDepth (TreeNode root) {
+        if(root==null){
+            return 0;
+        }
+        int max = Math.max(maxDepth(root.left) + 1, maxDepth(root.right) + 1);
+        return max;
+    }
+
+    /**
+     * 方法二
      * @param root TreeNode类
      * @return int整型
      */
-    public int maxDepth (TreeNode root) {
+    public int maxDepth2 (TreeNode root) {
         // write code here
         ArrayList<ArrayList<Integer>> total = new ArrayList();
         if(root==null){
