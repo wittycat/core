@@ -13,11 +13,6 @@ public class BM40重建二叉树 {
      * 而我们又知道中序遍历中根节点将二叉树分成了左右子树两个部分，
      */
     public static TreeNode reConstructBinaryTree(int [] pre,int [] vin) {
-        TreeNode build = build(pre, vin);
-        return build;
-    }
-
-    public static TreeNode build(int [] pre,int [] vin) {
         if (pre == null || pre.length == 0) {
             return null;
         }
@@ -42,14 +37,15 @@ public class BM40重建二叉树 {
 
 
         TreeNode treeNode = new TreeNode(root);
-        treeNode.left = build(pre_left, vin_left);
-        treeNode.right = build(pre_right, vin_right);
+        treeNode.left = reConstructBinaryTree(pre_left, vin_left);
+        treeNode.right = reConstructBinaryTree(pre_right, vin_right);
         return treeNode;
     }
 
     public static void main(String[] args) {
         int [] pre= {1,2,3,4};
         int [] vin= {4,3,2,1};
-        reConstructBinaryTree(pre,vin);
+        TreeNode build = reConstructBinaryTree(pre, vin);
+        System.out.println(build);
     }
 }
