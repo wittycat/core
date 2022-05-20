@@ -6,6 +6,8 @@ package com.core.algorithm.kaoshi202205;
  * 1.Arrays: 排序，查找
  *   java.util.Arrays#sort(int[], int, int)
  *   java.util.Arrays#sort(long[])
+ *   //必须在进行此调用之前对数组进行排序（通过 sort(int[]) 方法）。
+ *   //如果没有对数组进行排序，则结果是不确定的。如果数组包含多个带有指定值的元素，则无法保证找到的是哪一个。
  *   java.util.Arrays#binarySearch(int[], int)
  *
  * 2.数据结构
@@ -55,7 +57,12 @@ package com.core.algorithm.kaoshi202205;
  *          中序遍历：左根右
  *          后续遍历：左右根
  *      解题思路：
- *          三种遍历，层级遍历（队列解决）->可以解决深度；"之"形状打印
+ *          三种遍历：
+ *              前序遍历+中序遍历的数组:重构二叉树
+ *          层级遍历：
+ *              解决深度；
+ *              "之"形状打印
+ *              序列化二叉树
  *          把整体二叉树看待成一个小二叉树，然后使用递归可以解决：
  *              合并2个二叉树;
  *              某个链路求和;
