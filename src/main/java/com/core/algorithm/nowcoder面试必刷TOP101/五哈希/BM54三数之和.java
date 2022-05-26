@@ -10,31 +10,58 @@ import java.util.Arrays;
  */
 public class BM54三数之和 {
 
-    public ArrayList<ArrayList<Integer>> threeSum(int[] num) {
+    public static ArrayList<ArrayList<Integer>> threeSum(int[] num) {
         ArrayList<ArrayList<Integer>> res = new ArrayList<ArrayList<Integer>>();
-       if(num.length<3){
-           return res;
-       }
+        if (num.length < 3) {
+            return res;
+        }
+        ArrayList keys = new ArrayList();
         Arrays.sort(num);
-        for (int i = 0; i < num.length-2; i++) {
-            int sum= -num[i];
-            int left=i+1;
-            int right=num.length-1;
-            while (left<right){
-                if(sum==num[left]+num[right]){
-                    ArrayList<Integer> data =new ArrayList();
+        for (int i = 0; i < num.length - 1; i++) {
+            if (num[i] > 0) {
+                break;
+            }
+            int sum = -num[i];
+            if (keys.contains(sum)) {
+                continue;
+            } else {
+                keys.add(sum);
+            }
+            int left = i + 1;
+            int right = num.length - 1;
+            while (left < right) {
+                if (sum == num[left] + num[right]) {
+                    ArrayList<Integer> data = new ArrayList();
                     data.add(num[i]);
                     data.add(num[left]);
                     data.add(num[right]);
                     res.add(data);
-                    continue;
-                }else if(sum>num[left]+num[right]) {
+
+                    //排除重复的数字
+                    while ((left + 1) < num.length && num[left] == num[left + 1]) {
+                        left++;
+                    }
+                    while ((right - 1) > 0 && num[right] == num[right - 1]) {
+                        right--;
+                    }
+                    //继续+1
                     left++;
-                }else if(sum<num[left]+num[right]) {
+                    right--;
+
+                } else if (sum > num[left] + num[right]) {
+                    left++;
+                } else if (sum < num[left] + num[right]) {
                     right--;
                 }
             }
         }
         return res;
     }
+
+    public static void main(String[] args) {
+        int[] a = {0,-1,1};
+        System.out.println(threeSum(a));
+    }
+
+
 }
