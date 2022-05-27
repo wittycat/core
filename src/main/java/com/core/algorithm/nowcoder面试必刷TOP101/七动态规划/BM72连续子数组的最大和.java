@@ -8,33 +8,23 @@ package com.core.algorithm.nowcoder面试必刷TOP101.七动态规划;
  * 贪心思想属于动态规划思想中的一种，
  * 其基本原理是找出整体当中给的每个局部子结构的最优解，
  * 并且最终将所有的这些局部最优解结合起来形成整体上的一个最优解。
+ *
+ * 思路：https://www.bilibili.com/video/BV1ka4y1H7ZQ?spm_id_from=333.337.search-card.all.click
  */
 public class BM72连续子数组的最大和 {
     public static int FindGreatestSumOfSubArray(int[] array) {
-
-        int sum = 0;
-//        for (int i = 0; i < array.length; i++) {
-//            sum+=array[i];
-//        }
-//
-//        int i = 0;
-//        int j = array.length-1;
-//        while (i<j){
-//            int temp = sum;
-//            if(array[i]>array[j]){
-//                temp = temp-array[j];
-//                j--;
-//            }else {
-//                temp = temp-array[i];
-//                i++;
-//            }
-//            sum = Math.max(sum,temp);
-//        }
-        return sum;
+        int[] dp = new int[array.length+1];
+        dp[0] = array[0];
+        int max = dp[0];
+        for (int i = 1; i < array.length; i++) {
+            dp[i] = Math.max(array[i]+dp[i-1],array[i]);
+            max = Math.max(dp[i],max);
+        }
+        return max;
     }
 
     public static void main(String[] args) {
-       int[] a = {1,-2,3,10,-4,7,2,-5};
+        int[] a = {-1,-2,-3,-4,5};
         System.out.println(FindGreatestSumOfSubArray(a));
     }
 }
