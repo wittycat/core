@@ -23,7 +23,7 @@ public class BM12单链表的排序 {
             return head;
         }
 
-        //切分
+        //切分  2个指针不在同一个位置 比如 1 2 3 4 ,如果相同 就成了 1 2 3 ， 4
         ListNode slow = head;
         ListNode fast = head.next;
         while (fast != null && fast.next != null) {
@@ -54,6 +54,7 @@ public class BM12单链表的排序 {
             }
             head = head.next;
         }
+        //把最后尾巴拼接上
         head.next = left != null ? left : right;
         return res.next;
     }
