@@ -9,18 +9,6 @@ public class BM2链表内指定区间反转 {
 
 
     /**
-     * 12/20 组用例通过
-     * @param args
-     */
-    public static void main(String[] args) {
-        ListNode listNode1 = new ListNode(1);
-        ListNode listNode2 = new ListNode(2);
-        listNode1.next=listNode2;
-
-        ListNode listNode = reverseBetween(listNode1, 1, 2);
-        System.out.println(listNode);
-    }
-    /**
     *
     * @param head ListNode类
     * @param m int整型
@@ -28,38 +16,71 @@ public class BM2链表内指定区间反转 {
     * @return ListNode类
     */
     public static ListNode reverseBetween (ListNode head, int m, int n) {
-        if(m==n){
+        if (head == null) {
+            return null;
+        }
+        if (m == n) {
             return head;
         }
-        ListNode temp = new ListNode(0);
-        ListNode res = temp;
-        ListNode cur = head;
-        ListNode son = null;
-        ListNode firstson = null;
-        int index = 0;
-        while (cur!=null){
-            ListNode post=cur.next;
-            index++;
-            if(index>=m&&index<=n){
-                cur.next= son;
-                son = cur;
-                if(index==m){
-                    firstson =cur;
+        ListNode my = new ListNode(0);
+        ListNode myIndex = my;
+
+        ListNode son = new ListNode(0);
+        ListNode index = head;
+
+        int i = 1;
+        boolean headadd = false;
+        ListNode midLast = null;
+        while (index != null) {
+            ListNode cur = index;
+            index=index.next;
+            if(i<m){
+                myIndex.next=cur;
+                myIndex=cur;
+            }else if (i >= m && i <= n) {
+                if(i==m&&i==1){
+                    myIndex=cur;
+                    headadd=true;
+                }
+                if(i==m){
+                    midLast=cur;
+                }
+                cur.next=null;
+                ListNode next = son.next;
+                cur.next=next;
+                son.next=cur;
+                if(i==n){
+                    if(headadd){
+                        my.next=son.next;
+                    }else {
+                        myIndex.next=son.next;
+                    }
+                    myIndex=midLast;
                 }
             }else {
-                if(son!=null){
-                    temp.next=son;
-                    firstson.next=cur;
-                }else{
-                    temp.next = cur;
-                }
-                temp = cur;
+                myIndex.next=cur;
+                myIndex=cur;
             }
-            cur=post;
+            i++;
         }
-        if(res.next==null){
-            return son;
-        }
-        return res.next;
+        return my.next;
+    }
+
+    public static void main(String[] args) {
+        ListNode head1 = new ListNode(1);
+        ListNode head2 = new ListNode(2);
+        ListNode head3 = new ListNode(3);
+        ListNode head4 = new ListNode(4);
+        ListNode head5 = new ListNode(5);
+        ListNode head6 = new ListNode(6);
+
+        head1.next = head2;
+        head2.next = head3;
+        head3.next = head4;
+        head4.next = head5;
+        head5.next = head6;
+
+        ListNode listNode = reverseBetween(head1, 2,5);
+        System.out.println(listNode);
     }
 }
