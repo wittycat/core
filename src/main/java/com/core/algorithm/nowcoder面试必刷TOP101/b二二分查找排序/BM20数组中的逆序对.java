@@ -12,7 +12,7 @@ public class BM20数组中的逆序对 {
     public int InversePairs(int [] array) {
         //分
 
-        splitArr(array)
+//        splitArr(array)
         //合
 
         return 0;
