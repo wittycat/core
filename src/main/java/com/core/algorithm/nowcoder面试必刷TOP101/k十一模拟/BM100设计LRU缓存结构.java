@@ -50,8 +50,8 @@ public class BM100设计LRU缓存结构 {
         map.put(9,9);
         map.put(5,5);
         System.out.println(map.toString());
-        map.remove(1);
-        map.put(1,1);
+//        map.remove(1);
+        map.put(1,2);
         System.out.println(map.toString());
     }
 }
