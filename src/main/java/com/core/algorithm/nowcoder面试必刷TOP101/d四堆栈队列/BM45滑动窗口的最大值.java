@@ -13,32 +13,35 @@ public class BM45滑动窗口的最大值 {
 
     public static void main(String[] args) {
         ArrayList<Integer> integers = maxInWindows(new int[]{10,2,3,1,4}, 3);
-        System.out.println(integers);
+        System.out.println(":"+integers);
     }
 
 
     public static ArrayList<Integer> maxInWindows(int [] num, int size) {
         ArrayList<Integer> res = new ArrayList<>();
-        if(num.length<size||num.length==0){
+        if (num.length < size || num.length == 0) {
             return res;
         }
-        PriorityQueue<Integer> priorityQueue = new PriorityQueue<>((o1, o2) -> o2-o1);
-        boolean flag = false;
-        int length = num.length-size+1;
-        int t = size-1;
-        for (int i = 0; i < length ; i++) {
-            if(!flag){
-                int j = i;
-                while (j<(i+size)){
-                    priorityQueue.add(num[j]);
-                    j++;
+        PriorityQueue<Integer> queue = new PriorityQueue<>((o1, o2) -> o2 - o1);
+        int start = 0;
+        int end = 0;
+
+        while (end < num.length ) {
+            queue.add(num[end]);
+            if (end - start < size - 1) {
+                end++;
+                continue;
+            } else {
+                if (res.size() > 0 && num[end] >= res.get(res.size() - 1)) {
+                    res.add(num[end]);
+                } else {
+                    System.out.println(queue.toString());
+                    res.add(queue.peek());
                 }
-                flag = true;
-            }else {
-                priorityQueue.add(num[i+t]);
+                queue.remove(num[start]);
+                start++;
+                end++;
             }
-            res.add(priorityQueue.peek());
-            priorityQueue.remove(num[i]);
         }
         return res;
     }
