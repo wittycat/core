@@ -21,11 +21,10 @@ public class BM80买卖股票的最好时机一 {
             max = Math.max(max,dp[i]);
             lowPrice = Math.min(prices[i],lowPrice);
         }
-        //方式1
-//        int max = getMax(prices);
         return max;
     }
 
+    //方式1
     private static int getMax(int[] prices) {
         int lowPrice = prices[0];
         int max = 0;
