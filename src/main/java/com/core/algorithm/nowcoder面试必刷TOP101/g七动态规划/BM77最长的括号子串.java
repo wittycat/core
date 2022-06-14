@@ -33,7 +33,7 @@ public class BM77最长的括号子串 {
                 } else {
                     if (i - 1 - dp[i - 1] >= 0) {
                         if (s.charAt(i - 1 - dp[i - 1]) == '(') {
-                            dp[i] =2+ dp[i - 1] + ((i - 1 - dp[i - 1] - 1 >= 0) ? (dp[i - 1 - dp[i - 1] - 1]) : 0);
+                            dp[i] = 2 + dp[i - 1] + ((i - 1 - dp[i - 1] - 1 >= 0) ? (dp[i - 1 - dp[i - 1] - 1]) : 0);
                         }
                     }
                 }
