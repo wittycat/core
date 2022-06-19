@@ -1,4 +1,4 @@
-package com.core.algorithm.amoscloud2022;
+package com.core.algorithm.amoscloud;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -35,7 +35,6 @@ public class 题目68 {
      * @param args
      */
     public static void main(String[] args) {
-       //伪代码
         Scanner scanner = new Scanner(System.in);
         String line = scanner.nextLine();
         Integer[] array = Arrays.stream(line.split(" ")).map(Integer::parseInt).toArray(Integer[]::new);

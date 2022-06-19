@@ -1,4 +1,4 @@
-package com.core.algorithm.amoscloud2022;
+package com.core.algorithm.amoscloud;
 
 import java.util.Arrays;
 

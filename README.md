@@ -17,8 +17,7 @@
 * <a href="./document/system/">Unix环境高级编程 </a>
    
 ### 数据结构
-* <a href="./document/datastructures/">算法导论</a>
-* <a href="./document/datastructures/">数据结构和算法分析</a>
+* <a href="./document/datastructures/algorithmAnalysis.md">数据结构和算法分析</a>
 
 ### 通信协议
 * <a href="./document/communication/TCPIP基础.md">TCPIP协议族基础</a>

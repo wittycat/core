@@ -1,4 +1,4 @@
-package com.core.algorithm.amoscloud2022;
+package com.core.algorithm.amoscloud;
 
 /**
  * http://www.amoscloud.com/?cat=56
