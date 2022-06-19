@@ -86,7 +86,6 @@ public class 题目81_ {
             String valueOf = String.valueOf(cur);
             if (valueOf.indexOf("4") > -1) {
                 int anInt = Integer.parseInt(valueOf.replace('4', '5'));
-//                System.out.println(cur+"-->"+anInt);
                 sum += anInt - cur;
                 cur = anInt;
             }
