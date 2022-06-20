@@ -18,13 +18,7 @@ public class BM5合并k个已排序的链表 {
             return lists.get(0);
         }
 
-        ListNode listNode = lists.get(0);
-        PriorityQueue<ListNode> objects = new PriorityQueue<>(new Comparator<ListNode>() {
-            @Override
-            public int compare(ListNode o1, ListNode o2) {
-                return o1.val - o2.val;
-            }
-        });
+        PriorityQueue<ListNode> objects = new PriorityQueue<>(Comparator.comparingInt(o -> o.val));
         for (int i = 0; i < lists.size(); i++) {
             ListNode listNode1 = lists.get(i);
             ListNode index = listNode1;

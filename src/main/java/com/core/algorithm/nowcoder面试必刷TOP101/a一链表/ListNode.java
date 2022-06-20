@@ -15,6 +15,13 @@ public class ListNode {
 
     @Override
     public String toString() {
-        return "["+val+"]";
+        ListNode t = null;
+        t = next;
+        StringBuilder sb = new StringBuilder();
+        while (t != null) {
+            sb.append("[" + t.val + "]");
+            t = t.next;
+        }
+        return sb.toString();
     }
 }
