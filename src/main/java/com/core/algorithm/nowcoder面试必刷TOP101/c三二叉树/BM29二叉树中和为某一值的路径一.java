@@ -24,9 +24,11 @@ public class BM29二叉树中和为某一值的路径一 {
         if (root == null) {
             return false;
         }
+        //终止条件
         if (root.left == null && root.right == null && (root.val - sum) == 0) {
             return true;
         }
+        //迭代过程
         return exist(root.left, sum - root.val) || exist(root.right, sum - root.val);
     }
 }

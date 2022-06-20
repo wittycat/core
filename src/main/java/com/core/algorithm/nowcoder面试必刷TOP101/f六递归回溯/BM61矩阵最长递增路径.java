@@ -36,8 +36,7 @@ public class BM61矩阵最长递增路径 {
         int cur = matrix[i][j];
 
         max = Math.max(res.size(), max);
-        if(res.size()==6)
-        {
+        if(res.size()==6) {
             System.out.println(res);
         }
 

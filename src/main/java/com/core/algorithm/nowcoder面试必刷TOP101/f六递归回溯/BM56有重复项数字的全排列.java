@@ -32,11 +32,9 @@ public class BM56有重复项数字的全排列 {
                 }
                 temp.add(num[j]);
                 visit[j] = 1;
-                System.out.println(temp.toString()+"++"+ Arrays.toString(visit));
                 dfs(num, res, temp, visit);
                 visit[j] = 0;
                 temp.remove(temp.size() - 1);
-                System.out.println(temp.toString()+"--"+ Arrays.toString(visit));
             }
         }
     }

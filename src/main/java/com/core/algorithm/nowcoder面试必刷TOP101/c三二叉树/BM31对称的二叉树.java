@@ -17,9 +17,11 @@ public class BM31对称的二叉树 {
         if (left == null && right == null) {
             return true;
         }
+        //不相等条件
         if (left == null || right == null || right.val != left.val) {
             return false;
         }
+        //互相相等
         return judge(left.left, right.right) && judge(left.right, right.left);
     }
 }

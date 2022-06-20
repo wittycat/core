@@ -8,13 +8,11 @@ package com.core.algorithm.nowcoder面试必刷TOP101.f六递归回溯;
 public class BM59N皇后问题 {
 
     private static int all = 0;
-
     public static int Nqueen(int n) {
         int[][] arr = new int[n][n];
         dfs(arr, 0);
         return all;
     }
-
     /**
      * @param arr
      * @param i   第几行
@@ -22,16 +20,6 @@ public class BM59N皇后问题 {
     private static void dfs(int[][] arr, int i) {
         int n = arr.length;
         if (i == n) {
-//            AtomicInteger sum = new AtomicInteger();
-//            Arrays.stream(arr).forEach(item -> {
-//                for (int j = 0; j <item.length ; j++) {
-//                    if(item[j]==1){
-//                        sum.getAndIncrement();
-//                    }
-//                }
-//                System.out.println(Arrays.toString(item));
-//            });
-//            System.out.println("===================================="+sum.get());
             all++;
             return;
         }
