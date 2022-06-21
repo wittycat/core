@@ -1,4 +1,4 @@
-package com.core.algorithm.exam202006;
+package com.core.algorithm.exam20200607;
 
 import java.util.*;
 

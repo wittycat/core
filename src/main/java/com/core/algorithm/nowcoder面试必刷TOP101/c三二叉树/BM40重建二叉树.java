@@ -12,7 +12,7 @@ public class BM40重建二叉树 {
      * 对于二叉树的前序遍历，我们知道序列的第一个元素必定是根节点的值，因为序列没有重复的元素，因此中序遍历中可以找到相同的这个元素，
      * 而我们又知道中序遍历中根节点将二叉树分成了左右子树两个部分，
      */
-    public static TreeNode reConstructBinaryTree(int [] pre,int [] vin) {
+    public static TreeNode reConstructBinaryTree(int [] pre, int [] vin) {
         if (pre == null || pre.length == 0) {
             return null;
         }
