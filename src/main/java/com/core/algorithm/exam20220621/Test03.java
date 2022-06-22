@@ -7,6 +7,7 @@ import java.util.*;
  * Date: 2022/6/21 11:14 AM
  * Description:
  * https://www.nowcoder.com/discuss/931139?channel=-1&source_id=community_index_nctrack
+ * https://leetcode.cn/problems/task-scheduler/submissions/
  */
 public class Test03 {
     public static void main(String[] args) {
