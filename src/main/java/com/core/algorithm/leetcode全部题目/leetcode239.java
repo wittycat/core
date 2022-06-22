@@ -8,7 +8,7 @@ import java.util.Arrays;
  * Date: 2020/6/6 下午7:00
  * Description:
  */
-public  class Solution239 {
+public  class leetcode239 {
     /**
      * 双指针
      * @param nums

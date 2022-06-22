@@ -9,7 +9,7 @@ import java.util.Stack;
  * Description:
  * https://leetcode-cn.com/problems/valid-parentheses/
  */
-public  class Solution20 {
+public  class leetcode20 {
 
     /**
      * 给定一个只包括 '('，')'，'{'，'}'，'['，']' 的字符串，判断字符串是否有效

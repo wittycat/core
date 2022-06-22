@@ -10,7 +10,7 @@ import java.util.PriorityQueue;
  * Java中的PriorityQueue实现了数据结构堆，通过指定comparator字段来表示小顶堆或大顶堆，默认为null，表示自然序（natural ordering）。
  *
  */
-public  class Solution215 {
+public  class leetcode215 {
 
     public static int findKthLargest(int[] nums, int k) {
         PriorityQueue<Integer> integerPriorityQueue = new PriorityQueue<>();

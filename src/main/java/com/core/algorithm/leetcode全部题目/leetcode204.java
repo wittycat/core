@@ -5,7 +5,7 @@ package com.core.algorithm.leetcode全部题目;
  * Date: 2020/6/6 下午7:00
  * Description:
  */
-public  class Solution204 {
+public  class leetcode204 {
     public static int countPrimes(int n) {
         int count = 0;
         if (n == 4) {

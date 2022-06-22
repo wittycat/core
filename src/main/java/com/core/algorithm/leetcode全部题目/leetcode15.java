@@ -8,7 +8,7 @@ import java.util.*;
  * Description:
  *
  */
-public  class Solution15 {
+public  class leetcode15 {
 
     /**
      * 两次遍历加hash

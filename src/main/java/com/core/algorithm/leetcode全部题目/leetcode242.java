@@ -11,7 +11,7 @@ import java.util.List;
  * Description:
  *
  */
-public  class Solution242 {
+public  class leetcode242 {
 
     public static boolean isAnagram(String s, String t) {
         if (s == null || t == null || s.length() != t.length()) {

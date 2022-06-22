@@ -8,7 +8,7 @@ import java.util.HashMap;
  * Description:
  *
  */
-public  class Solution1 {
+public  class leetcode1 {
 
     public static int[] twoSum(int[] nums, int target) {
         HashMap<Integer, Integer> map = new HashMap<>();
