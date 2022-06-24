@@ -25,4 +25,4 @@
     
     头插入法
     
-    ![](/hashmap扩容形成环过程.png "TCP3次握手4次挥手")
+    ![](./hashmap扩容形成环过程.png "hashmap扩容形成环过程")
