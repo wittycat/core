@@ -45,24 +45,5 @@
 
 ### 设计模式
 
-<!--
-
-一级：
-jvm,netty,shell
-
-二级：
-java(算法),mysql
-
-1.java8
-2.mycat or share jdbc (移位操作)
-3.nio ->netty
-
-场景：
-问题：
-解决：
-不足：
-
--->
-
 
 

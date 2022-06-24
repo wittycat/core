@@ -27,7 +27,7 @@ public class BM56有重复项数字的全排列 {
                     continue;
                 }
                 ////当前的元素num[i]与同一层的前一个元素num[i-1]相同且num[i-1]已经用过了
-                if (j > 0 && num[j] == num[j - 1] && visit[j - 1] == 0) {
+                if (j > 0 && num[j] == num[j - 1] && visit[j - 1] == 1) {
                     continue;
                 }
                 temp.add(num[j]);
@@ -40,7 +40,7 @@ public class BM56有重复项数字的全排列 {
     }
 
     public static void main(String[] args) {
-        int[] array={1,1,3};
+        int[] array={1,1,2,1};
         ArrayList<ArrayList<Integer>> permute = permuteUnique(array);
         System.out.println(permute);
     }
