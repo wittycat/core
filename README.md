@@ -29,7 +29,7 @@
 
 ### 语言
 * [Java基础](https://github.com/wittycat/java/blob/master/README.md)
-* <a href="./document/distributed/JavaStereotype.md">java八股</a>
+* <a href="./document/distributed/JavaStereotype.md">Java八股</a>
 
 
 ### 分布式
