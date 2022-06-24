@@ -8,7 +8,7 @@ import java.util.Scanner;
  * Date: 2022/6/23 11:26 AM
  * Description:
  */
-public class Test031 {
+public class Test03_1 {
     /**
      * 10 9
      * 910
