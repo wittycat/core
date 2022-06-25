@@ -3,7 +3,6 @@
 ![](/document/summary/summary.png "概述")
 
 ### 常见业务场景
-* <a href="./document/problem/cache.md">缓存问题</a>
 * <a href="./document/problem/系统负载.md">系统负载</a>
 * <a href="./document/problem/一致性哈希.md">一致性哈希</a>
 
