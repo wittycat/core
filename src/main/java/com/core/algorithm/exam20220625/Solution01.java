@@ -4,6 +4,7 @@ package com.core.algorithm.exam20220625;
  * Created by chenxun.
  * Date: 2022/6/25 3:10 PM
  * Description:
+ * https://leetcode.cn/problems/solve-the-equation/
  */
 public class Solution01 {
 
