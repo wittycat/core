@@ -1,4 +1,4 @@
-package com.core.algorithm.exam20220621;
+package com.core.algorithm.exam.exam20220621;
 
 import java.util.Scanner;
 

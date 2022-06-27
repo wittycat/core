@@ -1,4 +1,4 @@
-package com.core.algorithm.exam20220625;
+package com.core.algorithm.exam.exam20220625;
 
 /**
  * Created by chenxun.
