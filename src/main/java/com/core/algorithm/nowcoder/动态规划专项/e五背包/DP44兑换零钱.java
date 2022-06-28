@@ -23,16 +23,18 @@ public class DP44兑换零钱 {
         for (int i = 1; i <= kinds; i++) {
             currency[i] = scanner.nextInt();
         }
-        int[][] dp = new int[kinds+1][MAX + 1];
+        int[] dp = new int[MAX + 1];
+        //最大最小 一般一半即可 防止溢出
+        Arrays.fill(dp, Integer.MAX_VALUE / 2);
+        dp[0] = 0;
         for (int i = 1; i <= kinds; i++) {
-            System.out.println(Arrays.toString(dp));
-            for (int j = 1; j <= MAX; j++) {
+            for (int j = 0; j <= MAX; j++) {
                 if (j >= currency[i]) {
-                    //todo
-//                    dp[i][j] = Math.min(dp[i-1][j], dp[j - currency[i]] + 1);
+                    dp[j] = Math.min(dp[j], dp[j - currency[i]] + 1);
                 }
             }
+            System.out.println(Arrays.toString(dp));
         }
-        System.out.println(Arrays.toString(dp));
+        System.out.println(dp[MAX] > -1 && dp[MAX] < Integer.MAX_VALUE / 2 ? dp[MAX] : -1);
     }
 }
