@@ -28,6 +28,7 @@
 			        if (left == right) {
 			            return;
 			        }
+			        //取中点方法：起点+（终点-起点） / 2
 			        int mid = left + (right - left) / 2;
 			        splitArr(array, left, mid);
 			        splitArr(array, mid+1, right);
