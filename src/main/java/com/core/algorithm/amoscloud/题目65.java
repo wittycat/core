@@ -1,5 +1,7 @@
 package com.core.algorithm.amoscloud;
 
+import java.util.*;
+
 /**
  * Created by chenxun.
  * Date: 2022/8/1 12:19 AM
@@ -46,6 +48,17 @@ public class 题目65 {
      *
      */
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String line = scanner.nextLine();
+        int i = scanner.nextInt();
+        char[] chars = line.toCharArray();
+        List<Character> list = new ArrayList<>();
+        for (int j = 0; j <chars.length ; j++) {
+            list.add(chars[j]);
+        }
+        Collections.sort(list);
 
+        Character character = i >= list.size() ? list.get(list.size() - 1) : list.get(i - 1);
+        System.out.println(line.indexOf(character));
     }
 }
